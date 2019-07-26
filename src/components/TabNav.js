@@ -16,7 +16,7 @@ const createLabel = (iconName, labelText) => (
 const welcomeLabel = createLabel("home", "Home Page");
 const characterLabel = createLabel("users", "Characters");
 const locationLabel = createLabel("user", "Locations");
-const episodeLabel = createLabel("user", "Episode");
+const episodeLabel = createLabel("show", "Episodes");
 
 const panes = [
   {
@@ -45,9 +45,9 @@ const panes = [
   {
     menuItem: (
       <Menu.Item
-        key="episode"
+        key="episodes"
         as={Nav}
-        to={`/episode`}
+        to={`/episodes`}
         content={episodeLabel}
       />
     )

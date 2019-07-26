@@ -3,8 +3,10 @@ import React from "react";
 import styled from "styled-components";
 
 const StyleLocationCard = styled.div`
-  border: 1px solid grey;
+  box-shadow: 1px 1px 9px 2px #234888;
   border-radius: 5px;
+  border: 1px solid grey;
+
   width: 350px;
   margin-bottom: 30px;
   display: flex;
