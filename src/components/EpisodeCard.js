@@ -1,14 +1,12 @@
 import React from "react";
-
 import styled from "styled-components";
 
-const StyleLocationCard = styled.div`
+const Div = styled.div`
   box-shadow: 1px 1px 9px 2px #234888;
   border-radius: 5px;
-  border: 1px solid grey;
-
   width: 350px;
   margin-bottom: 30px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,6 +14,7 @@ const StyleLocationCard = styled.div`
 
 const H3 = styled.h3`
   text-shadow: 0 0 1px #ff0000, 0 0 2px #0000ff;
+  font-weight: 700;
   font-size: 2.2rem;
   padding: 0;
   margin-bottom: 5px;
@@ -31,20 +30,12 @@ const H4 = styled.h4`
   margin-top: 5px;
 `;
 
-const P = styled.p`
-  text-shadow: 0 0 1px #ff0000, 0 0 2px #0000ff;
-  background-color: gray;
-  display: block;
-  margin-left: auto;
-`;
-
-export default function LocationCard({ location }) {
-  // image={image}
+export default function EpisodeCard({ episode }) {
   return (
-    <StyleLocationCard>
-      <H3>{location.name}</H3>
-      <H4>{location.type}</H4>
-      <P>{location.residents.length} residents</P>
-    </StyleLocationCard>
+    <Div>
+      <H3>{episode.name}</H3>
+      <H4>Episode: {episode.episode}</H4>
+      <H4>Air Date: {episode.air_date}</H4>
+    </Div>
   );
 }
