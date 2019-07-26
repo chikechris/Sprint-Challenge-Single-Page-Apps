@@ -1,6 +1,14 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import LocationCard from "./LocationCard";
+import styled from "styled-components";
+
+const Div = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 5px auto;
+`;
 
 export default function LocationsList() {
   const [locations, setLocations] = useState([]);
@@ -19,10 +27,10 @@ export default function LocationsList() {
   }, []);
 
   return (
-    <div>
+    <Div>
       {locations.map(location => (
         <LocationCard location={location} key={location.id} />
       ))}
-    </div>
+    </Div>
   );
 }
