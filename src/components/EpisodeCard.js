@@ -13,6 +13,7 @@ const Div = styled.div`
 `;
 
 const H3 = styled.h3`
+  text-shadow: 0 0 1px #ff0000, 0 0 2px #0000ff;
   font-size: 2.2rem;
   padding: 0;
   margin-bottom: 5px;
@@ -21,6 +22,7 @@ const H3 = styled.h3`
 `;
 
 const H4 = styled.h4`
+  text-shadow: 0 0 1px #ff0000, 0 0 2px #0000ff;
   font-size: 1.2rem;
   padding: 0;
   margin-bottom: 5px;

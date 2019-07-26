@@ -14,17 +14,36 @@ const StyleLocationCard = styled.div`
   align-items: center;
 `;
 
+const H3 = styled.h3`
+  text-shadow: 0 0 1px #ff0000, 0 0 2px #0000ff;
+  font-size: 2.2rem;
+  padding: 0;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  text-align: center;
+`;
+
+const H4 = styled.h4`
+  text-shadow: 0 0 1px #ff0000, 0 0 2px #0000ff;
+  font-size: 1.2rem;
+  padding: 0;
+  margin-bottom: 5px;
+  margin-top: 5px;
+`;
+
 const P = styled.p`
-  margin-left: 270px;
+  text-shadow: 0 0 1px #ff0000, 0 0 2px #0000ff;
   background-color: gray;
+  display: block;
+  margin-left: auto;
 `;
 
 export default function LocationCard({ location }) {
   // image={image}
   return (
     <StyleLocationCard>
-      <h3>{location.name}</h3>
-      <h4>{location.type}</h4>
+      <H3>{location.name}</H3>
+      <H4>{location.type}</H4>
       <P>{location.residents.length} residents</P>
     </StyleLocationCard>
   );
