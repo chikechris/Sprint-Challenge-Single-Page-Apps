@@ -11,7 +11,7 @@ export default function LocationsList() {
     axios
       .get(`https://rickandmortyapi.com/api/location/`)
       .then(res => {
-        setCharacters([...res.data.results]);
+        setLocations([...res.data.results]);
       })
       .catch(error => {
         console.log("Error", error);
@@ -20,8 +20,8 @@ export default function LocationsList() {
 
   return (
     <div>
-      {locations.map(location, id => (
-        <LocationCard location={location} key={id} />
+      {locations.map(location => (
+        <LocationCard location={location} key={location.id} />
       ))}
     </div>
   );
